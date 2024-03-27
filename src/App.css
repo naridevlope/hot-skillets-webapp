@@ -189,7 +189,6 @@
   height: 60px;
   border: none;
   border-radius: 20px;
-  vertical-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,6 +196,7 @@
   -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   position: absolute;
-  transform: translate(270px, 80px);
+  bottom: -255px;
   cursor: pointer;
+  justify-self: right;
 }
