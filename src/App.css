@@ -2,7 +2,7 @@
   --titulos: #212529;
   --textos: #666;
   --amarelo: #e7b10a;
-  --padDefault: 0 2.3rem;
+  --padDefault: 2.5rem 1rem;
 }
 
 .App {
@@ -11,29 +11,27 @@
   gap: 2.5rem;
   justify-content: center;
   align-items: center;
-  min-width: 414px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: var(--padDefault);
 }
 
 .header-presentation {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  padding: 2.3rem;
-  width: 414px;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 .search-container {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
   align-items: center;
-  width: 414px;
-  padding: var(--padDefault);
+  width: 100%;
 }
 
 .search-container input {
-  width: 100%;
   height: 50px;
   background-color: #f6f6f6;
   border: 1px solid #e8e8e8;
@@ -49,7 +47,7 @@
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 343px;
+  width: 100%;
   height: 170px;
   display: flex;
   justify-content: center;
@@ -81,17 +79,16 @@
 
 .favorite-recipes {
   display: grid;
-  grid-template-columns: auto auto;
   grid-template-rows: 30px 100%;
   color: var(--textos);
-  padding: var(--padDefault);
   align-items: center;
-  width: 414px;
+  width: 100%;
 }
 
 .favorite-recipes h2 {
   color: var(--titulos);
   font-size: 16px;
+  width: max-content;
 }
 
 .favorite-recipes span {
@@ -103,11 +100,12 @@
   display: flex;
   gap: 10px;
   grid-column: 1/3;
+  width: 100%;
 }
 
 .recipe-images img {
-  height: 120px;
-  width: 115px;
+  height: auto;
+  width: 90px;
   border-radius: 8px;
 }
 
@@ -115,17 +113,16 @@
 
 .suggestion-recipes {
   display: grid;
-  grid-template-columns: 200px 165px;
   grid-template-rows: 30px 100%;
   color: var(--textos);
-  padding: 0 2rem;
   align-items: center;
-  width: 414px;
+  width: 100%;
 }
 
 .suggestion-recipes h2 {
   color: var(--titulos);
   font-size: 16px;
+  width: max-content;
 }
 
 .suggestion-recipes span {
@@ -135,7 +132,7 @@
 
 .wrapper {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   overflow-x: auto;
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
@@ -151,23 +148,23 @@
 }
 
 #imageRecipes {
-  width: 155px;
+  width: 120px;
+  height: auto;
   border-radius: 8px;
 }
 
 .my-recipes {
   display: grid;
-  grid-template-columns: 200px 165px;
   grid-template-rows: 30px 100%;
   color: var(--textos);
-  padding: var(--padDefault);
   align-items: center;
-  width: 414px;
+  width: 100%;
 }
 
 .my-recipes h2 {
   color: var(--titulos);
   font-size: 16px;
+  width: max-content;
 }
 
 .my-recipes span {
@@ -185,8 +182,8 @@
 
 .addRecipeBtn {
   background-color: var(--amarelo);
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border: none;
   border-radius: 20px;
   display: flex;
@@ -195,8 +192,10 @@
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
-  position: absolute;
-  bottom: -255px;
+  position: fixed;
+  bottom: 8vw;
+  right: 5vw;
   cursor: pointer;
+  align-self: center;
   justify-self: right;
 }
