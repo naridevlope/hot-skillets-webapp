@@ -1,8 +1,4 @@
-# React + Vite
+É um projeto pessoal não terminado de um web app para celular. 
+O design do app, foi feito pela minha amiga designer e QA: https://www.linkedin.com/in/thais-almeida-464b91180/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Preciso retomá-lo e refazer a construção do layout. Mas caso queira ver como ficou em formato de celular basta ativar a ferramenta de desenvolvedor do navegador e escolher a opção que simula uma tela de celular.
